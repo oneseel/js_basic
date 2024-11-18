@@ -1,11 +1,13 @@
-// 여기에 코드를 작성하세요
-let espresso = 10;
-let milk = 170;
-let chocolateSyrup = 50;
-let whippedCream = 60;
+// 함수 선언
+function greetings() {
+  console.log("Hi");
+  console.log("안녕");
+  console.log("こんにちは");
+  console.log("你好");
+  console.log("Guten Tag");
+  console.log("Bonjour");
+  console.log("Buongiorno");
+}
 
-// 메뉴별 칼로리 테스트
-console.log(espresso); // 에스프레소 칼로리
-console.log(espresso + milk); // 라떼 칼로리
-console.log(espresso + chocolateSyrup + milk); // 모카 칼로리
-console.log(espresso + chocolateSyrup + milk + whippedCream); // 모카(휘핑 추가) 칼로리
+//함수 호출
+greetings();

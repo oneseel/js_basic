@@ -1,40 +1,44 @@
 /**
- * Variable 선언하기
+ * Variable Declaration
  *
- * 1) var - 더이상 쓰지 않는다.
- * 2) let
- * 3) const
+ * 1) var - 더 이상 사용하지 않는 것이 좋습니다.
+ * 2) let - 값을 변경할 수 있는 변수
+ * 3) const - 한 번 값이 할당되면 변경할 수 없는 상수
  */
 
-var name = "javascript";
-console.log(name);
+// var는 더 이상 사용하지 않음
+var product = "Laptop";
+console.log(`product (var): ${product}`);
 
-var age = 32;
-console.log(age);
+var quantity = 50;
+console.log(`quantity (var): ${quantity}`);
 
-let ive = "아이브";
-console.log(ive);
+// let을 사용하면 값 변경 가능
+let userName = "Alice";
+console.log(`userName (let): ${userName}`);
+
+// let으로 선언한 변수는 값을 변경할 수 있음
+userName = "Bob";
+console.log(`Updated userName (let): ${userName}`);
+
+// const는 한 번 값을 할당하면 변경할 수 없는 상수
+const country = "South Korea";
+console.log(`country (const): ${country}`);
+
+// const로 선언한 변수는 재할당 불가
+// country = "Canada"; // 오류 발생: Assignment to constant variable.
+
+console.log("\nDeclaration and Assignment:");
 
 /**
- * let과 var로 선언하면
- * 값을 추후 변경할 수 있다.
- */
-ive = "안유진";
-console.log(ive);
-
-const newJeans = "뉴진스";
-console.log(newJeans);
-
-// newJeans = "Super Shy";
-
-/**
- * 선언과 할당
+ * Declaration and Assignment
  *
- * 1) 변수를 선언하는 것.
- * 2) 할당
+ * 1) 선언 - 변수를 메모리에 할당
+ * 2) 할당 - 변수에 값을 설정
  */
 
-let aespa;
-console.log(aespa); // undefined
+let productCategory;
+console.log(`productCategory (undefined): ${productCategory}`); // 선언만 했을 때 값은 undefined
 
-// const blackpink; 'const' declarations must be initialized.
+// const로 선언할 때는 반드시 초기값을 할당해야 함
+// const region; // 오류 발생: 'const' declarations must be initialized
